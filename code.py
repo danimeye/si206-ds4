@@ -32,3 +32,12 @@ print("check_leap_year(2000): {}".format(check_leap_year(2000)))
 print("check_leap_year(1990): {}".format(check_leap_year(1990)))
 print("check_leap_year(2012): {}".format(check_leap_year(2012)))
 print("check_leap_year(2100): {}".format(check_leap_year(2100)))
+
+class codeTest(unittest.TestCase):
+    def test_leap_year1(self):
+        self.assertEqual(check_leap_year(1912), True)
+
+    def test_leap_year2(self):
+        self.assertEqual(check_leap_year(2000), True)
+
+unittest.main(verbosity=2) 
